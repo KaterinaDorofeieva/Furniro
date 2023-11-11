@@ -1,0 +1,96 @@
+/* ROOM */
+.room
+    padding: 44px 0 44px 0
+    background-color: #FCF8F3
+    min-height: 670px
+    position: relative
+    &_blocks
+        display: flex
+        align-items: center
+        position: relative
+        &_2
+        &_3
+
+    .header
+        font-size: 40px
+        text-align: left
+        line-height: 45px
+    .subheader
+        font-size: 16px
+        margin-top: 7px
+    .room_blocks_wrapp
+        margin-top: 30px 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 30px
+        width: 130px
+        &_block 
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 30px
+            height: 30px
+        .room_blocks_wrapp_block_activity
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #D8D8D8
+            width: 11px
+            height: 11px
+            border-radius: 100%
+            &:hover
+                width: 27px
+                height: 27px
+                border: 2px solid $primary
+                background-color: #FCF8F3
+                transition: 0.5s all
+                &::before
+                    content: ''
+                    display: flex
+                    background-color: $primary
+                    width: 11px
+                    height: 11px 
+                    border-radius: 100%
+            
+
+    .button
+        margin-top: 25px
+        width: 176px
+        height: 48px
+        text-transform: none
+    &_btn
+        display: flex
+        position: absolute
+        border-radius: 100%
+        width: 48px
+        height: 48px
+        border: none
+        background-color: #fff
+        box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.23)
+        right: 0%
+        &::before
+            content: ''
+            display: flex
+            position: absolute
+            transform: rotate(135deg)
+            width: 2px
+            height: 10px
+            background-color: $primary
+            top: 16px
+            right: 23px
+        &::after
+            content: ''
+            display: flex
+            position: absolute
+            transform: rotate(45deg)
+            width: 2px
+            height: 10px
+            background-color: $primary
+            right: 23px
+            top: 22px
+        &:hover
+            &::before, &::after
+                transition: 0.5s all
+                background-color: #ebbe54
+/* ROOM */
